@@ -1,0 +1,54 @@
+# Environment files and secrets
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.json
+service-account*.json
+
+# Local/private configuration
+request.http
+docker-compose.override.yml
+backend/src/main/resources/application-local.properties
+backend/src/main/resources/application-secret.properties
+
+# Java / Spring
+**/target/
+*.class
+*.jar
+*.war
+
+# Node / React
+**/node_modules/
+**/build/
+**/coverage/
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Python / ML
+**/__pycache__/
+*.py[cod]
+**/venv/
+**/.venv/
+ml_backend/embeddings/
+ml_backend/uploads/
+*.pt
+*.pth
+*.npy
+*.pkl
+
+# Logs, databases, IDEs, OS files
+*.log
+*.sqlite
+*.sqlite3
+*.db
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
